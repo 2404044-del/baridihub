@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaridiHub | Freshness for the Last Mile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --baridi-blue: #004488;    
+            --baridi-green: #28a745;     
+            --baridi-light-bg: #f4fbf6;  
+            --dark: #1a1a1a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--dark); background: #ffffff; scroll-behavior: smooth; }
+
+    
+        nav { 
+            background: white; 
+            padding: 1rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-weight: 700; font-size: 1.6rem; color: var(--baridi-blue); display: flex; align-items: center; }
+        .logo span { color: var(--baridi-green); }
+
+        
+        .hero { 
+            background: linear-gradient(135deg, var(--baridi-blue) 0%, #002244 100%); 
+            color: white; 
+            padding: 100px 5%; 
+            text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 800px; margin: 0 auto 30px; }
+        
+        .btn { 
+            background: var(--baridi-green); 
+            color: white; 
+            padding: 16px 35px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            display: inline-block;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn:hover { background: #218838; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+        
+        .section { padding: 80px 5%; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        
+        h2 { color: var(--baridi-blue); font-size: 2.5rem; margin-bottom: 30px; text-align: center; }
+        h2 span { color: var(--baridi-green); }
+
+        .feature-card { 
+            background: var(--baridi-light-bg); 
+            padding: 40px; 
+            border-radius: 20px; 
+            text-align: center;
+            border-bottom: 5px solid var(--baridi-green);
+        }
+        .feature-card h3 { color: var(--baridi-blue); margin-bottom: 15px; }
+
+
+        .contact-box { 
+            background: var(--baridi-blue); 
+            color: white; 
+            padding: 60px 40px; 
+            border-radius: 20px; 
+            text-align: center; 
+            margin-top: 50px;
+        }
+        .contact-info { margin: 20px 0; font-size: 1.2rem; }
+        .contact-info a { color: #80e0a0; text-decoration: none; font-weight: bold; }
+
+        footer { text-align: center; padding: 40px; background: #eee; color: #666; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Baridi<span>Hub</span></div>
+        <a href="tel:+254790149050" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">Call Support</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Stopping Food Waste,<br><span>Empowering Vendors.</span></h1>
+        <p>Reliable, solar-powered cooling for Kenya's informal markets. We keep your produce fresh so your profits stay high.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </header>
+
+    <section id="about" class="section container">
+        <h2>The <span>BaridiHub</span> Solution</h2>
+        <div class="grid">
+            <div class="feature-card">
+                <h3>Solar Hubs</h3>
+                <p>Centrally located charging stations at the heart of the market, powered by 100% clean solar energy.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Crates</h3>
+                <p>Our PCM-tech crates keep fish, milk, and vegetables at 5°C for 24 hours without electricity.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Pay-As-You-Go</h3>
+                <p>Affordable daily rentals for only Ksh 50. No expensive equipment to buy or maintain.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="contact-box">
+            <h2>Get In Touch</h2>
+            <p>Ready to join BaridiHub or have questions? Reach out to us today.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:baridihub@gmail.com">baridihub@gmail.com</a></p>
+                <p>Phone: <a href="tel:+254790149050">+254 790 149 050</a></p>
+            </div>
+            <p>Location: Nairobi, Kenya</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BaridiHub Kenya. Helping Mama Mbogas thrive.</p>
+    </footer>
+
+</body>
+</html>
